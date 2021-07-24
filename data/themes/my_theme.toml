@@ -17,6 +17,9 @@ menu_title = "#35383e"
 home_section_odd = "rgb(250,250,250)"
 home_section_even = "rgb(250,250,250)"
 
+link = "#127eee"
+link_hover = "#127eee"
+
 [dark]
   link = "#bbdefb"
   link_hover = "#bbdefb"
