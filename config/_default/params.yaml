@@ -20,7 +20,7 @@ twitter: ''
 
 # Contact (edit or remove options as required)
 
-email: tgiuliodonati.polen@gmail.com
+email: giuliodonati.polen@gmail.com
 phone: +39 338 7702999
 address:
   street: Piazza Emanuele Filiberto 2
@@ -41,19 +41,19 @@ contact_links:
   - icon: twitter
     icon_pack: fab
     name: DM Me
-    link: 'https://twitter.com/Twitter'
-  - icon: skype
-    icon_pack: fab
-    name: Skype Me
-    link: 'skype:echo123?call'
-  - icon: keybase
-    icon_pack: fab
-    name: Chat on Keybase
-    link: 'https://keybase.io/'
-  - icon: comments
-    icon_pack: fas
-    name: Discuss on Forum
-    link: 'https://discourse.gohugo.io'
+    link: 'https://twitter.com/g_donatisarti'
+#  - icon: skype
+#    icon_pack: fab
+#    name: Skype Me
+#    link: 'skype:echo123?call'
+#- icon: linkedin-in
+#    icon_pack: fab
+#    name: Chat on Keybase
+#    link: 'https://www.linkedin.com/in/giulio-donatisarti/'
+#  - icon: comments
+#    icon_pack: fas
+#    name: Discuss on Forum
+#    link: 'https://discourse.gohugo.io'
 
 # Site header
 
