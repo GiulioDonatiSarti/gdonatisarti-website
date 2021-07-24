@@ -22,6 +22,10 @@ main:
   - name: Contact
     url: '#contact'
     weight: 60
+  [[main]]
+    name = "contact"  # Title of the link.
+    url = "contact/"  # Widget Page folder name.
+    weight = 1  # Position of the link in the navigation bar.
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/uploads/resume.pdf` and uncomment the lines below.
