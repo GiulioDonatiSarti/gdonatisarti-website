@@ -1,5 +1,7 @@
 ---
 widget: contact
+# Activate this widget? true/false
+active: false
 widget_id: recent-post
 headless: true
 weight: 130
