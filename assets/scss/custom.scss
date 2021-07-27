@@ -141,6 +141,7 @@ color: rgba(0,0,0,.7);
   color: $sta-menu-text;
 }
 
+
 @include media-breakpoint-down(md) {
   // Used in conjunction with mobile .navbar-brand to center logo on mobile.
   .navbar-brand-mobile-wrapper {
@@ -209,7 +210,6 @@ ul.nav-icons li.nav-item a.nav-link {
   background-color: $sta-menu-primary !important;
   color: $sta-menu-text !important;
 }
-
 
 
 /*************************************************
