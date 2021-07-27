@@ -4,14 +4,16 @@ advanced:
   css_class: ""
 widget: blank
 widget_id: a
-headless: true
+headless: false
 weight: 15
 title: Academic Template
 subtitle: ""
 active: true
 design:
   columns: "1"
-background-image: linear-gradient(to bottom right, red , yellow);
+  background:
+    gradient_start: red
+    gradient_end: yellow
     text_color_light: true
   spacing:
     padding:
