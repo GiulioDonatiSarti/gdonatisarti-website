@@ -19,7 +19,7 @@
 
 <!-- About widget -->
 <div class="row">
-  <div class="container centered">
+  <div class="col-12 col-lg-4">
     <div id="profile">
 
       {{ if site.Params.avatar.gravatar }}
@@ -34,11 +34,11 @@
         {{ with $person.role }}<h3>{{ . | markdownify | emojify }}</h3>{{ end }}
 
         {{ range $person.organizations }}
-        <h4>
+        <h3>
           {{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}
           <span>{{ .name }}</span>
           {{ if .url }}</a>{{ end }}
-        </h4>
+        </h3>
         {{ end }}
       </div>
 
@@ -65,16 +65,15 @@
         {{ end }}
       </ul>
 
-      <div class="biohome-title">
-        <h1>{{ $person.greetings }}</h1>
-        {{ with $person.biohome }}<p>{{ . | markdownify | emojify }}</p>{{ end }}
 
     </div>
   </div>
-  <div class="container centered">
+  <div class="col-12 col-lg-8">
 
-    {{/* Only display widget title in explicit instances of about widget, not in author pages. */}}
-    {{ if and $page.Params.widget $page.Title }}<h3>{{ $page.Title | markdownify | emojify }}</h3>{{ end }}
+
+          <div class="bio">
+            <h1>{{ $person.greetings1 }}</h1>
+            {{ with $person.bio }}<p>{{ . | markdownify | emojify }}</p>{{ end }}
 
     {{ $person_page.Content }}
 
