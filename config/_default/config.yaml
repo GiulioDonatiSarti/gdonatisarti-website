@@ -4,7 +4,7 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 title: Giulio Donati Sarti # Website name
-baseurl: 'https://donatisartig.netlify.app' # Website URL
+baseurl: 'https://gdonatisarti.netlify.app' # Website URL
 copyright: '' # Footer text, e.g. '© {year} Me'
 
 ############################
