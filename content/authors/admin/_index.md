@@ -18,9 +18,11 @@ bio: My research interests include distributed robotics, mobile computing and pr
 
 # Interests to show in About widget
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+- Digital Cartography
+- 3D Cartography
+- Geographic Information Systems
+- Remote Sensing
+- Graphic Design
 
 # Education to show in About widget
 education:
