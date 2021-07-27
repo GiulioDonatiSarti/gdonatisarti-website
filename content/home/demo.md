@@ -11,9 +11,7 @@ subtitle: ""
 active: true
 design:
   columns: "1"
-  #grad {
-    background-image: linear-gradient(to right, red , yellow);
-  }
+background-image: linear-gradient(to bottom right, red , yellow);
     text_color_light: true
   spacing:
     padding:
