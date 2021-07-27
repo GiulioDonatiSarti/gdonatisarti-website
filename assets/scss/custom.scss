@@ -14,10 +14,9 @@
   left: 0;
   z-index: 1030;
 
-
   // Remove Bootstrap's navbar v-padding and assign v-padding to logo separately to maximise logo size.
   // Otherwise, Bootstrap's navbar v-padding causes issue with logo fitting within fixed 50px height bar in md-lg sizes.
-  padding: 0 0rem 0 0rem;
+  padding: 0 1rem;
 
   .nav-item {
     // For z-index compatibility with logo on mobile layout, otherwise nav-item can't be clicked when logo present.
