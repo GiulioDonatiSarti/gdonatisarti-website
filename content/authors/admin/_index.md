@@ -70,6 +70,11 @@ email: ""
 
 # Highlight the author in author lists? (true/false)
 highlight_name: false
+
+#long bio (displayed in Homepage)
+greetings: Welcome to my website!
+biohome: I'm a cartographer and GIS specialist based in Turin. I pursued a Master's degree in Geography and Spatial Science and a three-year degree in City, Territory and Landscape Planning. From my training I have obtained a multidisciplinary and multi-scalar vision of the territory, actors and flows that allows me to carry out spatial analyses in a critical way. By carrying out studies on a large scale, such as those relating to individual neighbourhoods or population centres, and on a larger scale, such as the regional level, I have come into contact with the fundamental concepts of selecting, generalising, simplifying and evaluating the timing of processes. My interest in graphics led me to explore methods of representing spatially referenced information using various digital graphics processing software. I have developed skills in transferring data from GIS software to typical graphic processing programs, including 3D, and taking care of the representation of each spatial element through a customised process.
+
 ---
 
 Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.

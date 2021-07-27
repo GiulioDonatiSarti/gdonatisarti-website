@@ -65,12 +65,16 @@
         {{ end }}
       </ul>
 
+      <div class="portrait-title">
+        <h1>{{ $person.greetings }}</h1>
+        {{ with $person.biohome }}<h3>{{ . | markdownify | emojify }}</h3>{{ end }}
+
     </div>
   </div>
   <div class="container centered">
 
     {{/* Only display widget title in explicit instances of about widget, not in author pages. */}}
-    {{ if and $page.Params.widget $page.Title }}<h1>{{ $page.Title | markdownify | emojify }}</h1>{{ end }}
+    {{ if and $page.Params.widget $page.Title }}<h3>{{ $page.Title | markdownify | emojify }}</h3>{{ end }}
 
     {{ $person_page.Content }}
 
