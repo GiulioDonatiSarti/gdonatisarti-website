@@ -6,12 +6,12 @@ title: Giulio Donati Sarti
 superuser: true
 
 # Role/position/tagline
-role: Professor of Artificial Intelligence
+role: GIS Technician - Cartographer - Graphic Designer
 
 # Organizations/Affiliations to show in About widget
 organizations:
-- name: Stanford University
-  url: https://www.stanford.edu/
+- name: Laboratory of Territorial and Urban Analysis and Representation (LARTU)
+  url: http://www.lartu.polito.it/
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include distributed robotics, mobile computing and programmable matter.
@@ -57,7 +57,7 @@ social:
   link: https://www.linkedin.com/
 
 # Link to a PDF of your resume/CV.
-# To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.toml`, 
+# To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.toml`,
 # and uncomment the lines below.
 # - icon: cv
 #   icon_pack: ai
