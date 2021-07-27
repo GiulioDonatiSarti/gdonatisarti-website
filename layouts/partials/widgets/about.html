@@ -34,11 +34,11 @@
         {{ with $person.role }}<h3>{{ . | markdownify | emojify }}</h3>{{ end }}
 
         {{ range $person.organizations }}
-        <h3>
+        <h4>
           {{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}
           <span>{{ .name }}</span>
           {{ if .url }}</a>{{ end }}
-        </h3>
+        </h4>
         {{ end }}
       </div>
 
@@ -65,9 +65,9 @@
         {{ end }}
       </ul>
 
-      <div class="portrait-title">
+      <div class="biohome-title">
         <h1>{{ $person.greetings }}</h1>
-        {{ with $person.biohome }}<h3>{{ . | markdownify | emojify }}</h3>{{ end }}
+        {{ with $person.biohome }}<h4>{{ . | markdownify | emojify }}</h4>{{ end }}
 
     </div>
   </div>
