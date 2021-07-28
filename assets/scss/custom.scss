@@ -1,7 +1,253 @@
 /*************************************************
- *  Navigation bar
+ *  Academic's Core
  **************************************************/
- /*************************************************
+
+html {
+  font-family: $sta-font-body, sans-serif;
+  font-size: #{$sta-font-size-small}px;
+  color: rgba(0,0,0,0.8);
+  line-height: 1.65;
+}
+@media screen and (min-width: 58em) {
+  html {
+    font-size: #{$sta-font-size}px;
+  }
+}
+
+body {
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: inherit;
+  color: inherit;
+  background-color: $sta-background;
+  margin-top: 50px; /* Offset body content by navbar height. */
+  padding-top: 0;
+  counter-reset: captions;
+}
+@include media-breakpoint-down(md) { /* Match max-width of .nav-bar query. */
+  body {
+    margin-top: 50px; /* Offset body content by navbar height. */
+  }
+}
+
+.max-width-640 {
+  max-width: 640px;
+}
+
+.margin-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center-text {
+  text-align: center;
+}
+
+/* Body text */
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* Lists */
+ul, ol, dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ul.task-list {
+  list-style: none;
+}
+
+ul.task-list li input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+/* Navigation bar text */
+.navbar-light {
+  font-family: $sta-font-nav, sans-serif;
+  font-weight: 400;
+  line-height: 1.25;
+  text-rendering: optimizeLegibility;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: $sta-font-heading, sans-serif;
+  font-weight: 400;
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+  line-height: 1.25;
+  color: #313131;
+  text-rendering: optimizeLegibility;
+
+  /* Ensure long words do not overflow into content. */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+
+  /* Add a hyphen where the word breaks (use `&shy;` to insert a soft-hyphen in a word). */
+  -webkit-hyphens: manual;
+  -ms-hyphens: manual;
+  hyphens: manual;
+}
+h1 {
+  font-size: 2.25rem;
+}
+h2 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+h3 {
+  font-weight: 700;
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
+}
+h4, h5, h6 {
+  font-weight: 700;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+a,
+h3.article-title a:hover {
+  color: $sta-link;
+  text-decoration: none;
+  transition: color 0.6s ease;
+}
+
+a:hover,
+a:focus {
+  color: $sta-link-hover;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+}
+
+.img-responsive {
+  /* Extend Bootstrap declaration with centering. */
+  margin: 0 auto;
+}
+
+// Center all figure images by default.
+figure img {
+  @extend .margin-auto;
+}
+
+// Center all figure captions by default.
+figcaption {
+  display: block;
+  margin-top: 0.75em;
+  margin-bottom: 1.65rem;
+  line-height: 1.4;
+  font-size: 0.76rem;
+  text-align: center;
+}
+
+figcaption.numbered:before {
+  font-weight: 700;
+  text-transform: uppercase;
+  content: attr(data-pre) counter(captions) attr(data-post);
+}
+
+figcaption.numbered {
+  counter-increment: captions;
+}
+
+pre,
+code {
+  font-family: $sta-font-mono, monospace;
+  color: #c7254e;
+  background-color: #f9f2f4;
+}
+
+pre {
+  margin: 0 0 1rem 0;
+  background-color: rgb(248, 248, 248); /* Match default highlight theme. */
+  border-color: rgb(248, 248, 248);
+  font-size: 0.7rem;
+  border-radius: 4px;
+}
+
+pre code {
+  white-space: pre; /* Override Bootstrap to preserve line breaks in code. */
+  overflow-x: auto;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+/* Quotes */
+blockquote {
+  padding: .5rem 1rem;
+  margin: .8rem 0;
+  color: #7a7a7a;
+  border-left: .25rem solid #e5e5e5;
+}
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 30em) {
+  blockquote {
+    padding-right: 5rem;
+    padding-left: 1.25rem;
+  }
+}
+
+.markup-quote {
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, rgba(233, 231, 245, 1), rgba(233, 231, 245, 1));
+}
+
+.space-below {
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 768px) {
+  .space-below {
+    margin-bottom: 10px;
+  }
+}
+
+.universal-wrapper {
+  margin: 0 auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-top: 0.1rem;
+  width: 100%;
+}
+
+@media only screen and (min-width: 1001px) {
+  .universal-wrapper {
+    width: 1000px;
+  }
+}
+
+small,
+.small {
+  font-size: .75em;
+}
+
+.responsive-wrap iframe {
+  max-width: 100%;
+}
+
+
+
+/*************************************************
   *  Navigation bar
   **************************************************/
 
@@ -215,6 +461,146 @@
    color: $sta-menu-text !important;
  }
 
+ /*************************************************
+  *  Page Builder: sections and widgets
+  **************************************************/
+
+ @keyframes intro {
+   0% {
+     opacity: 0;
+   }
+   100% {
+     opacity: 1;
+   }
+ }
+
+ .home-section {
+   background-color: $sta-home-section-odd;
+   padding: 60px 0 0 0;
+   animation: intro 0.3s both;
+   animation-delay: 0.15s;
+ }
+
+ /* Override dark colors that may be inherited from body.dark */
+ .home-section.dark,
+ .home-section.dark h1,
+ .home-section.dark h2,
+ .home-section.dark h3,
+ .home-section.dark a:not(.btn) {
+   color: rgb(248, 248, 242);
+ }
+
+ /* Underline links in dark sections to separate them from text */
+ .home-section.dark a:not(.btn):not(.hero-cta-alt) {
+   text-decoration: underline;
+ }
+
+ /* Revert Alert Box Link style (.home-section.dark style above should not be applied to it) */
+ .home-section.dark .alert a {
+   color: inherit !important;
+   text-decoration: inherit !important;
+ }
+
+ /* Big underline style for links in dark sections */
+ /* Disabled as it's an experimental style that requires CSS NOT Selector Level 4 (only in Safari) */
+ /*
+ .home-section.dark.big-underline a:not(.btn):not(.hero-cta-alt):not(.alert a) {
+   text-decoration: none;
+   position: relative;
+ }
+ .home-section.dark.big-underline a:not(.btn):not(.hero-cta-alt):not(.alert a):after {
+   background: #fff;
+   content: "";
+   height: 2px;
+   left: 0;
+   right: 0;
+   position: absolute;
+   top: 100%;
+ }*/
+
+ /* Default background image properties for home sections. */
+ .home-section.bg-image {
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+
+ /* Create a parallax-like scrolling effect. */
+ .parallax {
+   height: 100%;
+   background-attachment: fixed;
+ }
+
+ .home-section:first-of-type {
+   padding-top: 0px;
+ }
+
+ .home-section:nth-of-type(even) {
+   background-color: $sta-home-section-even;
+ }
+
+ .dark .home-section {
+   background-color: $sta-dark-home-section-odd;
+ }
+
+ .dark .home-section:nth-of-type(even) {
+   background-color: $sta-dark-home-section-even;
+ }
+
+ @media screen and (max-width: 768px) {
+   .home-section {
+     padding: 60px 0 60px 0;
+   }
+   .home-section:first-of-type {
+     padding-top: 40px;
+   }
+ }
+
+ .section-heading h1 {
+   margin: 0 0 10px 0;
+ }
+
+ .section-heading p {
+   font-weight: 400;
+   font-size: 1.1rem;
+   color: #b2b2b2;
+ }
+
+ /*************************************************
+  *  Widgets (common)
+  **************************************************/
+
+ .see-all {
+   margin-top: 0rem;
+   text-transform: uppercase;
+ }
+
+ /* Reset code highlighting style in Alerts when Alert is child of a `.dark` widget, but Alert should be light.` */
+ /* But will this affect page which should have dark Alert? */
+ .dark .alert pre,
+ .dark .alert code {
+   color: initial;
+   background-color: initial;
+ }
+
+ /*************************************************
+  *  Slider Widget
+  **************************************************/
+
+ /* Clear `.home-section` as padding and animation interferes with Slider's layout and animations. */
+ .home-section.wg-slider {
+   padding: 0;
+   animation: none;
+   animation-delay: unset;
+ }
+
+ /* The Slider widget reuses the Hero widget's `.wg-hero` class.
+  * We must remove the `animation` and `clear` in this instance or
+  * multiple slides can be `.active` at once. */
+ .carousel-inner .wg-hero {
+   animation: none;
+   clear: none;
+ }
 
 
 /*************************************************
@@ -223,7 +609,7 @@
 
 #profile {
   text-align: center;
-  padding: 50px 10px;
+  padding: 0px 10px;
   position: relative;
 }
 
@@ -232,7 +618,14 @@
   height: 150px;
   margin: 0 auto;
   object-fit: cover;
+  box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.3), -3px -3px 5px 0 rgba(0, 0, 0, 0.1);
 }
+
+.avatar:hover {
+  box-shadow: 5px 5px 8px 0 rgba(0, 0, 0, 0.3), -5px -5px 8px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
 
 // Use smaller avatar size in About widget on small devices.
 @include media-breakpoint-down(sm) {
@@ -324,10 +717,31 @@ ul.ul-edu li .description p.institution {
   color: rgba(0,0,0,0.6);
 }
 
+
+@keyframes aboutanimation {
+  from {
+    opacity: 0;
+    color: red;
+  }
+  to {
+    opacity: 1;
+    color: black;
+  }
+}
+
+#profile {
+  animation: aboutanimation 2s forwards;
+}
+
 /*************************************************
  *  Biohome
  **************************************************/
 
+ #about {
+   text-align: center;
+   padding: 90px 0px;
+   position: relative;
+ }
  .biohome-title h1 {
    font-size: 3em;
    font-weight: 300;
@@ -362,4 +776,32 @@ ul.ul-edu li .description p.institution {
     margin: 0px 0px 10px 0px;
     line-height: 160%;
     text-align: justify;
+  }
+
+
+  /*************************************************
+   *  Footer
+   **************************************************/
+
+  footer {
+    margin: 0.5rem 0 0;
+    padding: 0.5rem 0;
+    width: 100%;
+    color: rgb(250,250,250);
+  }
+
+  footer p {
+    font-size: 0.1rem;
+    text-align: center;
+  }
+
+  site-footer,
+  footer a.back-to-top i {
+    color: rgb(250,250,250);
+  }
+
+  .dark site-footer,
+  .dark footer a.back-to-top i,
+  .dark .docs .body-footer {
+    color: rgb(250,250,250);
   }
