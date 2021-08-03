@@ -14,28 +14,28 @@ organizations:
   url: http://www.lartu.polito.it/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: My research interests Geographic Information Systems, 2D and 3D Cartography, Remote Sensing and Graphic Design.
 
 # Interests to show in About widget
 interests:
-- Digital Cartography
-- 3D Cartography
 - Geographic Information Systems
+- 2D and 3D Cartography
 - Remote Sensing
+- Photogrammetry
 - Graphic Design
 
 # Education to show in About widget
 education:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
+  - course: MSc in in Geography and Territorial Sciences
+    institution: Turin University
+    year: 2021
+  - course: BSc in Urban, Territorial and Landscape Planning
+    institution: Florence University
+    year: 2018
+  - course: Diploma of Surveyor
+    institution: State Institute Bertrand Russell - Isaac Newton
+    year: 2014
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
@@ -66,7 +66,7 @@ social:
 #   link: uploads/resume.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: ""
+email: "giuliodonati.polen@gmail.com"
 
 # Highlight the author in author lists? (true/false)
 highlight_name: false
