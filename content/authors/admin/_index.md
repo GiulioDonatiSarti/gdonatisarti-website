@@ -78,7 +78,15 @@ biohome1: From my training I have obtained a multidisciplinary and multi-scalar 
 biohome2: My interest in graphics led me to explore methods of representing spatially referenced information using various digital graphics processing software. I have developed skills in transferring data from GIS software to typical graphic processing programs, including 3D, and taking care of the representation of each spatial element through a customised process.
 
 # Short bio (displayed in user profile at end of posts)
-bio: From my training I have gained more than five years of experience in the study, analysis and representation of geographical space. I have acquired a multi-disciplinary and multi-scale vision of the territory, actors and flows that allows me to carry out spatial analysis in a critical way. The training and internship choices I have pursued have been guided, always with greater awareness, by my passion for the application and experimentation of computer tools applied to the territory and the desire to put myself at stake in this area. At the same time as my university education, I have had work experiences, also abroad, - outside the field of study - which has structured me from the point of view of dedication to work, seriousness, attention to directives and desire to learn and grow.
+bio: |2-
+  From my training I have gained more than five years of experience in the study, analysis and representation of geographical space.
+
+  I have acquired a multi-disciplinary and multi-scale vision of the territory, actors and flows that allows me to carry out spatial analysis in a critical way.
+
+
+  The training and internship choices I have pursued have been guided, always with greater awareness, by my passion for the application and experimentation of computer tools applied to the territory and the desire to put myself at stake in this area.
+
+  At the same time as my university education, I have had work experiences, also abroad, - outside the field of study - which has structured me from the point of view of dedication to work, seriousness, attention to directives and desire to learn and grow.
 
 ---
 
